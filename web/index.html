@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project name</title>
+    <style>
+        h1 {
+            color: #00fdcb;
+            text-align: left;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 20;
+            font-size: 50px;
+            margin-right: 300px;
+        }
+
+        body {
+            background-color: #864aff;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            color: whitesmoke;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .district {
+            text-align:center;
+            font-size: 70px;
+        }
+
+        .welcome-text {
+            margin-right: 300px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: #00fdcb;
+            border-style: solid;
+            border: none;
+            border-radius: 5px;
+            padding:10px;
+            text-align:left;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+
+        }
+
+        .inp {
+            border-radius: 5px;
+            background-color: #6417ff;
+            border-style: solid;
+            border: none;
+            height: 20px;
+            margin-top:10px;
+        }
+
+        .inner {
+            padding: 10px;
+            background-color: #7a46e1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Find out which Warsaw district is destined for you!</h1>
+    <div class="welcome-text">Are you new to Warsaw and haven't found your place yet? <b>Bemowo</b>, <b>Żoliborz</b>...
+        you've heard those names but you have no idea what they actually mean? Take our test and find out which
+        Warsaw district best suits you and your needs! &#128302;
+        <div class="inner">Rate the following statements using the scale 0-10 where:<br>
+            <ul>
+                <li><b>0</b> - doesn't describe me at all</li>
+                <li><b>5</b> - indifferent</li>
+                <li><b>10</b> - describes me perfectly</li>
+            </ul>
+        </div><br><br>
+
+        <b>1.</b> Childcare and child amenities matter a great deal to me<br>
+        <input type="number" class="inp" id="childcare" min="0" max="10"><br><br>
+        <b>2.</b> Keeping up with my health is important to me<br>
+        <input type="number" class="inp" id="health" min="0" max="10"><br><br>
+        <b>3.</b> I enjoy going out to socialize<br>
+        <input type="number" class="inp" id="social-life" min="0" max="10"><br><br>
+        <b>4.</b> I will fully rely on public transportation to get around town<br>
+        <input type="number" class="inp" id="public-transport" min="0" max="10"><br><br>
+        <b>5.</b> I expect my district to be more conscious of the environment<br>
+        <input type="number" class="inp" id="eco-friendly" min="0" max="10"><br><br>
+        <b>6.</b> I need to live in a place that everyone can physically access<br>
+        <input type="number" class="inp" id="mobility" min="0" max="10"><br><br>
+        <b>7.</b> I want to live in a place that is pet-friendly<br>
+        <input type="number" class="inp" id="pet-friendly" min="0" max="10"><br><br>
+        <button>Submit</button><br><br>
+        <div class="district"></div>
+
+    </div>
+    <script type="text/javascript" src="../eel.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
