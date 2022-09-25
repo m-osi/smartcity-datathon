@@ -17,7 +17,7 @@ def random_python():
 def get_result():
     features = eel.collectData()()
     features = [(int(x)/10) for x in features]
-    df = pd.read_pickle("https://m-osi.github.io/smartcity-datathon/data/final_dataset.pkl") 
+    df = pd.read_pickle("./data/final_dataset.pkl") 
     nn = NearestNeighbors(n_neighbors=1, algorithm='ball_tree')
     nn.fit(df.values)
     features = np.array(features)
