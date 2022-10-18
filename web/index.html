@@ -18,6 +18,8 @@
         /* Firefox */
         input[type=number] {
             -moz-appearance: textfield;
+            margin-top: 10px;
+            color: whitesmoke;
         }
 
         h1 {
@@ -38,15 +40,12 @@
             font-weight: 300;
             color: whitesmoke;
             margin: 10px;
+            margin-bottom: 30px;
         }
 
         .district {
             text-align: center;
             font-size: 70px;
-        }
-
-        .description {
-            text-align: center;
         }
 
         .welcome-text {
@@ -74,7 +73,6 @@
             border: none;
             height: 20px;
             margin-top: 10px;
-            color: whitesmoke;
         }
 
         .inner {
@@ -82,6 +80,11 @@
             background-color: #7a46e1;
             margin-top: 10px;
             margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -91,35 +94,34 @@
     <div class="welcome-text">Are you new to Warsaw and haven't found your place yet? <b>Bemowo</b>, <b>Żoliborz</b>...
         you've heard those names but you have no idea what they actually mean? Take our test and find out which
         Warsaw district best suits you and your needs! &#128302;
-        <div class="inner">Rate the following statements using the scale 0-10 where:<br>
+        <div class="inner">Rate the following statements using the scale 1-10 where:<br>
             <ul>
-                <li><b>0</b> - doesn't describe me at all</li>
+                <li><b>1</b> - doesn't describe me at all</li>
                 <li><b>5</b> - indifferent</li>
                 <li><b>10</b> - describes me perfectly</li>
             </ul>
         </div><br><br>
-        <form name="EntryForm">
-            <b>1.</b> Childcare and child amenities matter a great deal to me<br></label>
-            <input type="number" class="inp" id="childcare" min="0" max="10"><br><br>
-            <b>2.</b> Keeping up with my health is important to me<br>
-            <input type="number" class="inp" id="health" min="0" max="10"><br><br>
-            <b>3.</b> I enjoy going out to socialize<br>
-            <input type="number" class="inp" id="social-life" min="0" max="10"><br><br>
-            <b>4.</b> I will fully rely on public transportation to get around town<br>
-            <input type="number" class="inp" id="public-transport" min="0" max="10"><br><br>
-            <b>5.</b> I expect my district to be more conscious of the environment<br>
-            <input type="number" class="inp" id="eco-friendly" min="0" max="10"><br><br>
-            <b>6.</b> I need to live in a place that everyone can physically access<br>
-            <input type="number" class="inp" id="mobility" min="0" max="10"><br><br>
-            <b>7.</b> I want to live in a place that is pet-friendly<br>
-            <input type="number" class="inp" id="pet-friendly" min="0" max="10"><br><br>
-            <button>Submit</button>
-        </form><br><br>
+
+        <b>1.</b> Childcare and child amenities matter a great deal to me<br>
+        <input type="number" class="inp" id="childcare" min="0" max="10"><br><br>
+        <b>2.</b> Keeping up with my health is important to me<br>
+        <input type="number" class="inp" id="health" min="0" max="10"><br><br>
+        <b>3.</b> I enjoy going out to socialize<br>
+        <input type="number" class="inp" id="social-life" min="0" max="10"><br><br>
+        <b>4.</b> I will fully rely on public transportation to get around town<br>
+        <input type="number" class="inp" id="public-transport" min="0" max="10"><br><br>
+        <b>5.</b> I expect my district to be more conscious of the environment<br>
+        <input type="number" class="inp" id="eco-friendly" min="0" max="10"><br><br>
+        <b>6.</b> I need to live in a place that everyone can physically access<br>
+        <input type="number" class="inp" id="mobility" min="0" max="10"><br><br>
+        <b>7.</b> I want to live in a place that is pet-friendly<br>
+        <input type="number" class="inp" id="pet-friendly" min="0" max="10"><br><br>
+        <button>Submit</button><br><br>
         <div class="district"></div>
         <div class="description"></div>
 
     </div>
-    <script type="text/javascript" src="./eel.js"></script>
+    <script type="text/javascript" src="../eel.js"></script>
     <script src="./script.js" type="text/javascript"></script>
 </body>
 

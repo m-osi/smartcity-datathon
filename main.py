@@ -6,12 +6,6 @@ from sklearn.neighbors import NearestNeighbors
 
   
 eel.init("web")  
-  
-# Exposing the random_python function to javascript
-@eel.expose    
-def random_python():
-    print("Random function running")
-    return randint(1,100)
 
 @eel.expose
 def get_result():
